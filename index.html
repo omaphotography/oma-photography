@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>OMA PHOTOGRAPHY</title> 
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="OMA Photography - capturing timeless moments through weddings, portraits, events and lifestyle photography. Book your session today.">
+  <meta name="keywords" content="OMA Photography, event photography, wedding photographer, portrait photography, creative training, Ayomide, Nigeria">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Ayomide Ojo">
+
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="OMA Photography | Creative Event & Portrait Photography">
+  <meta property="og:description" content="OMA Photography offers premium event coverage, portraits, training, and web services. Let's create something beautiful together.">
+  <meta property="og:image" content="https://your-site.vercel.app/OMA%20black.png">
+  <meta property="og:url" content="https://your-site.vercel.app">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="OMA black.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .animated { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
+    .animated.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader"><p>Loading...</p></div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">OMA<span>PHOTOGRAPHY</span></h1>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <nav>
+        <ul id="navLinks" class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#programs">Programs</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero section animated">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>LET'S CREATE SOMETHING BEAUTIFUL TOGETHER</h2>
+      <p>BOOK YOUR SECTION TODAY.</p>
+      <a href="#programs" class="btn-primary glow">Explore Programs</a>
+      <a href="#contact" class="btn-sec pulse">Contact us</a>
+    </div>
+  </section>
+
+  <!-- Programs -->
+  <section id="programs" class="programs section animated">
+    <div class="container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-subtitle">Let's know what you want.</p>
+      <div class="program-grid">
+        <div class="program-card">
+          <img src="DSC_0185.jpg" alt="Event" />
+          <h3>Event Coverage</h3>
+          <p>Planning an event? Let me help you capture every highlight and smile.</p>
+        </div>
+        <div class="program-card">
+          <img src="DSC_0597.jpg" alt="Portraits" />
+          <h3>Portraits</h3>
+          <p>Need clean, bold, and beautiful portraits? let me help you shine.</p>
+        </div>
+        <div class="program-card">
+          <img src="istockphoto-488208446-1024x1024.jpg" alt="Training" />
+          <h3>Training</h3>
+          <p>Ready to master the art of photography? Enroll in my training and start your creative journey today!.</p>
+        </div>
+        <div class="program-card">
+          <img src="Capture2.jpg" alt="Web" />
+          <h3>Web Development</h3>
+          <p>We create modern websites that look great and work smoothly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about section animated">
+    <div class="container about-wrapper">
+      <div class="about-text">
+        <h2>ABOUT OMA PHOTOGRAPHY</h2>
+        <p>My name is Ayomide, the creative eye behind OMA PHOTOGRPHY. I spaecialize in capturing timeless moments through weddings, portraits, events and lifestyle photography</p>
+        <p>Photography started as a hobby and grew into passion. I love connecting with people and turning their moments into art.</p>
+      </div>
+      <div class="about-image">
+        <img src="IMG_8937.jpg" alt="About Surepace" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials section animated">
+    <div class="container">
+      <h2 class="section-title">What Our Customers do Say</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial-item active">
+          <p>"Editing is clean and professional!"</p>
+        
+        </div>
+        <div class="testimonial-item">
+          <p>"These are the best photos i've ever taken!"</p>
+          
+        </div>
+        <div class="testimonial-item">
+          <p>"I will definitely be recommending you!"</p>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact section animated">
+    <div class="contact-overlay"></div>
+    <div class="container contact-wrapper">
+      <div class="contact-text">
+        <h2>Get in Touch</h2>
+        <p>Have questions or want to apply? Fill out the form and we’ll reach out shortly.</p>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 OMA PHOTOGRAPHY. All rights reserved.</p>
+      <p>Email: <a href="aduraoma2003@gmail.com">aduraoma2003@gmail.com</a> |
+         Phone: <a href="tel:+2348065124880">+2348065124880</a></p>
+    </div>
+  </footer>
+
+  <!-- Scroll To Top -->
+  <button id="scrollTopBtn" title="Back to Top">↑</button>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/2348065124880" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <img src="m013t0007_a_social_media_whats_app_icon_30may23.png" alt="WhatsApp" id="wat" />
+  </a>
+
+  <!-- Dark Mode Toggle -->
+  <button id="darkToggle" title="Toggle Dark Mode">🌓</button>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('active');
+    }
+
+    const testimonials = document.querySelectorAll('.testimonial-item');
+    let index = 0;
+    setInterval(() => {
+      testimonials[index].classList.remove('active');
+      index = (index + 1) % testimonials.length;
+      testimonials[index].classList.add('active');
+    }, 4000);
+
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+    window.onscroll = () => {
+      scrollTopBtn.style.display = (document.documentElement.scrollTop > 300) ? "block" : "none";
+    };
+    scrollTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    window.addEventListener('load', () => {
+      document.getElementById('preloader').style.display = 'none';
+    });
+
+    document.getElementById("darkToggle").onclick = () => {
+      document.body.classList.toggle("dark");
+    };
+
+    // Animate sections on scroll
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.animated').forEach(sec => {
+        const top = window.scrollY + window.innerHeight;
+        if (sec.offsetTop < top - 100) {
+          sec.classList.add('visible');
+        }
+      });
+    });
+
+    // Animate visible sections on load
+    document.querySelectorAll('.animated').forEach(sec => {
+      const top = window.scrollY + window.innerHeight;
+      if (sec.offsetTop < top - 100) {
+        sec.classList.add('visible');
+      }
+    });
+
+    // Submit form to Google Sheet
+    const contactForm = document.getElementById("contactForm");
+    contactForm.addEventListener("submit", e => {
+      e.preventDefault();
+      const data = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        message: document.getElementById("message").value
+      };
+
+      fetch("https://script.google.com/macros/s/AKfycbydQGxOwUm0yPIyFJn6C7Y2fnyS_VAiBvT2kt_p8ZJhLGZwyaw5E91jCqq-0yNUcVtncA/exec", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      })
+      .then(response => response.json())
+      .then(res => {
+        if (res.status === "success") {
+          alert("✅ Message sent!");
+          contactForm.reset();
+        } else {
+          alert("❌ Something went wrong. Try again.");
+        }
+      })
+      .catch(err => {
+        console.error(err);
+        alert("❌ Network error.");
+      });
+    });
+  </script>
+
+</body>
+</html>
