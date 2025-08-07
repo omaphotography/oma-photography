@@ -1,0 +1,84 @@
+<!-- web.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Website Projects | OMA Photography</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background: #f7f7f7;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .website-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .site-item {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(41, 10, 155, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .site-item:hover {
+      transform: scale(1.03);
+    }
+
+    .site-item img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .site-caption {
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .site-caption a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>My Website Projects</h1>
+  <div class="website-gallery">
+    <div class="site-item">
+      <a href="https://example-site-1.vercel.app" target="_blank">
+        <img src="websites/site1-preview.jpg" alt="Website 1">
+      </a>
+      <div class="site-caption">
+        <a href="https://example-site-1.vercel.app" target="_blank">Visit Website 1</a>
+      </div>
+    </div>
+
+    <div class="site-item">
+      <a href="https://example-site-2.vercel.app" target="_blank">
+        <img src="websites/site2-preview.jpg" alt="Website 2">
+      </a>
+      <div class="site-caption">
+        <a href="https://example-site-2.vercel.app" target="_blank">Visit Website 2</a>
+      </div>
+    </div>
+
+    <!-- Add more items as needed -->
+  </div>
+
+</body>
+</html>
