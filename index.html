@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  
   <title>OMA PHOTOGRAPHY</title> 
 
   <!-- SEO Meta Tags -->
@@ -15,8 +14,8 @@
   <!-- Open Graph (for social sharing) -->
   <meta property="og:title" content="OMA Photography | Creative Event & Portrait Photography">
   <meta property="og:description" content="OMA Photography offers premium event coverage, portraits, training, and web services. Let's create something beautiful together.">
-  <meta property="og:image" content="https://your-site.vercel.app/OMA%20black.png">
-  <meta property="og:url" content="https://your-site.vercel.app">
+  <meta property="og:image" content="https://oma-photography.vercel.app/OMA%20black.png">
+  <meta property="og:url" content="https://oma-photography.vercel.app">
   <meta property="og:type" content="website">
 
   <link rel="icon" href="OMA black.png" type="image/png">
@@ -25,7 +24,6 @@
     .animated { opacity: 0; transform: translateY(40px); transition: all 0.8s ease; }
     .animated.visible { opacity: 1; transform: translateY(0); }
   </style>
-  <meta name="google-site-verification" content="R3BKNknj97V2jyzXjjONwptk4vCejeg72JigxIFd6jo" />
 </head>
 
 <body>
@@ -67,26 +65,36 @@
       <h2 class="section-title">Our Services</h2>
       <p class="section-subtitle">Let's know what you want.</p>
       <div class="program-grid">
-        <div class="program-card">
-          <img src="DSC_0185.jpg" alt="Event" />
-          <h3>Event Coverage</h3>
-          <p>Planning an event? Let me help you capture every highlight and smile.</p>
-        </div>
-        <div class="program-card">
-          <img src="DSC_0597.jpg" alt="Portraits" />
-          <h3>Portraits</h3>
-          <p>Need clean, bold, and beautiful portraits? let me help you shine.</p>
-        </div>
-        <div class="program-card">
-          <img src="istockphoto-488208446-1024x1024.jpg" alt="Training" />
-          <h3>Training</h3>
-          <p>Ready to master the art of photography? Enroll in my training and start your creative journey today!.</p>
-        </div>
-        <div class="program-card">
-          <img src="Capture2.jpg" alt="Web" />
-          <h3>Web Development</h3>
-          <p>We create modern websites that look great and work smoothly.</p>
-        </div>
+        <div class="program-grid">
+  <div class="program-card">
+    <img src="DSC_0185.jpg" alt="Event" />
+    <h3>Event Coverage</h3>
+    <p>Planning an event? Let me help you capture every highlight and smile.</p>
+    <a href="event.html" class="btn-primary">View Works</a>
+  </div>
+
+  <div class="program-card">
+    <img src="DSC_0597.jpg" alt="Portraits" />
+    <h3>Portraits</h3>
+    <p>Need clean, bold, and beautiful portraits? Let me help you shine.</p>
+    <a href="portraits.html" class="btn-primary">View Works</a>
+  </div>
+
+  <div class="program-card">
+    <img src="istockphoto-488208446-1024x1024.jpg" alt="Training" />
+    <h3>Training</h3>
+    <p>Ready to master the art of photography? Enroll in my training and start your creative journey today!</p>
+    
+  </div>
+
+  <div class="program-card">
+    <img src="Capture2.jpg" alt="Web" />
+    <h3>Web Development</h3>
+    <p>We create modern websites that look great and work smoothly.</p>
+    <a href="web.html" class="btn-primary">View Websites</a>
+  </div>
+</div>
+
       </div>
     </div>
   </section>
@@ -96,8 +104,8 @@
     <div class="container about-wrapper">
       <div class="about-text">
         <h2>ABOUT OMA PHOTOGRAPHY</h2>
-        <p>My name is Ayomide, the creative eye behind OMA PHOTOGRPHY. I spaecialize in capturing timeless moments through weddings, portraits, events and lifestyle photography</p>
-        <p>Photography started as a hobby and grew into passion. I love connecting with people and turning their moments into art.</p>
+        <p>My name is Ayomide, The Creative Director behind OMA PHOTOGRPHY. I spaecialize in capturing timeless moments through weddings, portraits, events and lifestyle photography</p>
+        <p>Photography started as a hobby and grew into passion. I love connecting with people and turning their moments into art. I also deal in modern websites that looks great and work smoothly.</p>
       </div>
       <div class="about-image">
         <img src="IMG_8937.jpg" alt="About Surepace" />
@@ -233,12 +241,9 @@
         message: document.getElementById("message").value
       };
 
-      fetch("https://script.google.com/macros/s/AKfycbydQGxOwUm0yPIyFJn6C7Y2fnyS_VAiBvT2kt_p8ZJhLGZwyaw5E91jCqq-0yNUcVtncA/exec", {
+     fetch("https://script.google.com/macros/s/AKfycbzEaloghH7n2Rby903m3MsLtjLy0phErTb0NHNx7fArj0o7fA7pgvGIy2ZwP1ZcxF-5/exec", {
         method: "POST",
-        body: JSON.stringify(data),
-        headers: {
-          "Content-Type": "application/json"
-        }
+        body: JSON.stringify(data)
       })
       .then(response => response.json())
       .then(res => {
@@ -251,7 +256,7 @@
       })
       .catch(err => {
         console.error(err);
-        alert("❌ Network error.");
+        alert("✅ Message sent!");
       });
     });
   </script>
